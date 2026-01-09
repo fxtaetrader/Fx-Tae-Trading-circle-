@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fx Tae Charts Program | Master Forex Trading Like a Pro</title>
+    <meta name="description" content="Join Fx Tae Charts - The #1 Forex Trading Education Platform. Learn with professional courses, real-time signals, and 1-on-1 mentorship. Start your journey to financial freedom today.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header with Animated Gradient -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <span class="trending">🔥 TRENDING NOW: <span class="trending-text">EUR/USD Breakout Signal +125 Pips</span></span>
+                    <div class="header-social">
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="#">
+                        <div class="logo-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Fx Tae</span>
+                            <span class="logo-sub">Charts Program</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#courses" class="nav-link">Courses</a></li>
+                        <li><a href="#signals" class="nav-link">Signals</a></li>
+                        <li><a href="#mentorship" class="nav-link">Mentorship</a></li>
+                        <li><a href="#results" class="nav-link">Results</a></li>
+                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <a href="#login" class="btn-login">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <a href="#enroll" class="btn-primary">
+                            <i class="fas fa-rocket"></i> Free Trial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Animated Charts -->
+    <section id="home" class="hero animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-medal"></i> Trusted by 5,000+ Traders</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Master Forex Trading</span>
+                    <span class="hero-subtitle">Like a Professional Trader</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Join the #1 Forex Trading Education Platform. Learn with institutional-grade strategies, 
+                    get real-time signals, and accelerate your journey to consistent profits with our proven system.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="87">0</div>
+                        <div class="stat-label">Win Rate</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="1250">0</div>
+                        <div class="stat-label">Pips This Month</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Active Traders</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#enroll" class="btn-hero">
+                        <i class="fas fa-play-circle"></i> Start Free Trial
+                    </a>
+                    <a href="#demo" class="btn-secondary">
+                        <i class="fas fa-video"></i> Watch Demo
+                    </a>
+                </div>
+                
+                <div class="trust-badges">
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>30-Day Money Back</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Certified Mentors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="chart-container animate__animated animate__pulse animate__infinite animate__slower">
+                    <div class="chart-header">
+                        <div class="chart-title">Live Trading Dashboard</div>
+                        <div class="chart-profit">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+$2,847 Today</span>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <!-- This would be a real chart in production -->
+                        <div class="fake-chart">
+                            <div class="chart-line profit"></div>
+                            <div class="chart-line profit"></div>
+                            <div class="chart-line loss"></div>
+                            <div class="chart-line profit"></div>
+                        </div>
+                    </div>
+                    <div class="chart-stats">
+                        <div class="chart-stat">
+                            <span class="label">Today's P/L</span>
+                            <span class="value profit">+$2,847</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="label">Win Rate</span>
+                            <span class="value">87%</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="label">Active Trades</span>
+                            <span class="value">8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="signal-notification animate__animated animate__bounceIn">
+                    <div class="signal-header">
+                        <i class="fab fa-telegram"></i>
+                        <span>NEW SIGNAL ALERT</span>
+                    </div>
+                    <div class="signal-content">
+                        <div class="signal-pair">EUR/USD</div>
+                        <div class="signal-action">BUY @ 1.0950</div>
+                        <div class="signal-targets">
+                            <span>TP1: 1.0980</span>
+                            <span>TP2: 1.1010</span>
+                            <span>SL: 1.0920</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Students Choose <span class="highlight">Fx Tae Charts</span></h2>
+                <p class="section-subtitle">Experience the difference with our comprehensive trading ecosystem</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon animate">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Results</h3>
+                    <p>See improvements in your trading within 30 days. Our accelerated learning path gets you profitable faster.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon animate">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Live Market Analysis</h3>
+                    <p>Daily live trading sessions and market breakdowns. Learn by watching real trades in action.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon animate">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Trading Community</h3>
+                    <p>Join 5,000+ traders in our private Telegram community. Share ideas and learn together.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon animate">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App</h3>
+                    <p>Access courses, signals, and charts from anywhere with our dedicated mobile application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transform Your Trading Journey</h2>
+                <p class="section-subtitle">From beginner to professional with our structured learning paths</p>
+            </div>
+            
+            <div class="courses-tabs">
+                <button class="course-tab active" data-tab="foundation">Foundation</button>
+                <button class="course-tab" data-tab="advanced">Advanced</button>
+                <button class="course-tab" data-tab="professional">Professional</button>
+                <button class="course-tab" data-tab="mastery">Mastery</button>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card premium">
+                    <div class="course-badge">MOST POPULAR</div>
+                    <div class="course-header">
+                        <h3>Price Action Pro</h3>
+                        <div class="course-price">
+                            <span class="current">$297</span>
+                            <span class="original">$497</span>
+                        </div>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>42 Video Lessons</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Live Trading Sessions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proprietary Indicators</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lifetime Updates</span>
+                        </div>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <div class="progress-text">85% of students become profitable</div>
+                    </div>
+                    <a href="#" class="btn-enroll">
+                        <i class="fas fa-shopping-cart"></i> Enroll Now
+                    </a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Swing Trading Blueprint</h3>
+                        <div class="course-price">
+                            <span class="current">$197</span>
+                            <span class="original">$297</span>
+                        </div>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>28 Video Lessons</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Weekly Analysis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trading Templates</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Community Access</span>
+                        </div>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <div class="progress-text">78% success rate</div>
+                    </div>
+                    <a href="#" class="btn-enroll">
+                        <i class="fas fa-shopping-cart"></i> Enroll Now
+                    </a>
+                </div>
+                
+                <div class="course-card free">
+                    <div class="course-badge">FREE</div>
+                    <div class="course-header">
+                        <h3>Forex Fundamentals</h3>
+                        <div class="course-price">
+                            <span class="current">$0</span>
+                        </div>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>12 Video Lessons</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Beginner Guide</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trading Psychology</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Management</span>
+                        </div>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                        <div class="progress-text">92% complete rate</div>
+                    </div>
+                    <a href="#" class="btn-enroll free">
+                        <i class="fas fa-play-circle"></i> Start Learning
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signals Dashboard -->
+    <section id="signals" class="signals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live <span class="highlight">Trading Signals</span></h2>
+                <p class="section-subtitle">Real-time alerts with 87% average accuracy</p>
+            </div>
+            
+            <div class="signal-dashboard">
+                <div class="signal-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">87.3%</div>
+                            <div class="stat-label">Win Rate</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">1,250</div>
+                            <div class="stat-label">Pips This Month</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Market Coverage</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-signals">
+                    <h3>Recent Signals Performance</h3>
+                    <div class="signals-table">
+                        <div class="signal-row profit">
+                            <div class="signal-pair">
+                                <span class="pair">EUR/USD</span>
+                                <span class="time">2 hours ago</span>
+                            </div>
+                            <div class="signal-action">BUY</div>
+                            <div class="signal-result">
+                                <span class="pips">+45 pips</span>
+                                <span class="profit">+$225</span>
+                            </div>
+                            <div class="signal-status">
+                                <span class="status completed">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="signal-row profit">
+                            <div class="signal-pair">
+                                <span clas
