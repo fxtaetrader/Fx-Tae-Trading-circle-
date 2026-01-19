@@ -1327,103 +1327,142 @@ body {
     .courses-grid {
         grid-template-columns: 1fr;
     }
-/* ==============================
-   Mentorship Section
-============================== */
+/* ===============================
+   MENTORSHIP SECTION
+================================ */
 
 .mentorship {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    padding: 80px 20px;
-    color: #ffffff;
     position: relative;
+    height: 100vh;
+    background: radial-gradient(circle at top, #020617, #000);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Candlestick Background Layer */
+.candlestick-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 /* Container */
 .mentorship .container {
+    position: relative;
+    z-index: 5;
     max-width: 1100px;
     margin: auto;
     text-align: center;
 }
 
-/* Inner Section Box */
+/* Glass Card */
 .mentorship-section {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 60px 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    animation: fadeUp 1s ease-in-out;
+    padding: 70px 40px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(250, 204, 21, 0.25);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+    animation: fadeUp 1.2s ease forwards;
 }
 
-/* Title */
+/* Heading */
 .mentorship-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #facc15, #fde68a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
-    color: #00eaff;
 }
 
-/* Subtitle */
+/* Subheading */
 .mentorship-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
-    margin-bottom: 35px;
+    font-size: 1.15rem;
+    color: #d1d5db;
+    margin-bottom: 45px;
 }
 
-/* Mentorship Button */
+/* CTA Button */
 .mentor-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 35px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #0f2027;
-    background: linear-gradient(135deg, #00eaff, #00ffb3);
-    border-radius: 50px;
+    display: inline-block;
+    padding: 16px 44px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #020617;
+    background: linear-gradient(135deg, #facc15, #fde047);
+    border-radius: 60px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 25px rgba(0, 234, 255, 0.4);
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.7);
+    transition: all 0.35s ease;
 }
 
-/* Icon inside button */
-.mentor-btn i {
-    font-size: 1.1rem;
-}
-
-/* Hover Effect */
 .mentor-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0, 234, 255, 0.6);
-    background: linear-gradient(135deg, #00ffb3, #00eaff);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .mentorship-section h2 {
-        font-size: 2rem;
-    }
-
-    .mentorship-section p {
-        font-size: 1rem;
-    }
-
-    .mentor-btn {
-        padding: 14px 28px;
-        font-size: 0.95rem;
-    }
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 55px rgba(250, 204, 21, 1);
 }
 
 /* Fade Animation */
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* ===============================
+   CANDLESTICKS
+================================ */
+
+.candle {
+    position: absolute;
+    bottom: 50%;
+    width: 10px;
+    animation: floatCandle linear infinite;
+}
+
+.candle.green {
+    background: #22c55e;
+}
+
+.candle.red {
+    background: #ef4444;
+}
+
+/* Wick */
+.candle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    background: inherit;
+    transform: translateX(-50%);
+    top: -15px;
+    height: 30px;
+}
+
+/* Floating motion */
+@keyframes floatCandle {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-200px);
+        opacity: 0.8;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mentorship-section h2 {
+        font-size: 2.1rem;
     }
 }
