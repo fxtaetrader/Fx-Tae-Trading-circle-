@@ -214,3 +214,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 30000);
 });
+const candleContainer = document.querySelector(".candlestick-bg");
+
+function createCandle() {
+    const candle = document.createElement("div");
+    const isBullish = Math.random() > 0.5;
+
+    candle.classList.add("candle");
+    candle.classList.add(isBullish ? "green" : "red");
+
+    const height = Math.random() * 80 + 40;
+    const left = Math.random() * window.innerWidth;
+    const duration = Math.random() * 6 + 4;
+
+    candle.style.height = `${height}px`;
+    candle.style.left = `${left}px`;
+    candle.style.animationDuration = `${duration}s`;
+
+    candleContainer.appendChild(candle);
+
+    setTimeout(() => {
+        candle.remove();
+    }, duration * 1000);
+}
+
+/* Generate candles continuously */
+setInterval(createCandle, 300);
