@@ -1327,139 +1327,83 @@ body {
     .courses-grid {
         grid-template-columns: 1fr;
     }
-}
 /* ==============================
-   ELITE MENTORSHIP SECTION
+   Mentorship Section
 ============================== */
 
 .mentorship {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 80px 20px;
+    color: #ffffff;
     position: relative;
-    padding: 100px 20px;
-    background: radial-gradient(circle at top, #111827, #020617);
     overflow: hidden;
-    color: #fff;
-}
-
-/* Animated Trading Lines */
-.mentorship::before,
-.mentorship::after {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #facc15, transparent);
-    animation: tradeMove 6s linear infinite;
-    opacity: 0.25;
-}
-
-.mentorship::after {
-    top: 60%;
-    animation-duration: 8s;
-}
-
-@keyframes tradeMove {
-    from { transform: translateX(-50%); }
-    to { transform: translateX(0%); }
 }
 
 /* Container */
 .mentorship .container {
     max-width: 1100px;
     margin: auto;
-    position: relative;
-    z-index: 2;
     text-align: center;
 }
 
-/* Glass Card */
+/* Inner Section Box */
 .mentorship-section {
-    padding: 70px 40px;
-    border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(250, 204, 21, 0.25);
-    backdrop-filter: blur(14px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
-    animation: eliteFade 1.2s ease forwards;
+    border-radius: 16px;
+    padding: 60px 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    animation: fadeUp 1s ease-in-out;
 }
 
-/* Heading */
+/* Title */
 .mentorship-section h2 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    background: linear-gradient(90deg, #facc15, #fde68a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 15px;
-    letter-spacing: 1px;
+    color: #00eaff;
 }
 
-/* Subheading */
+/* Subtitle */
 .mentorship-section p {
-    font-size: 1.15rem;
-    color: #d1d5db;
-    margin-bottom: 45px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 35px;
 }
 
-/* CTA Button */
+/* Mentorship Button */
 .mentor-btn {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px 42px;
-    font-size: 1.05rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #020617;
-    background: linear-gradient(135deg, #facc15, #fde047);
-    border-radius: 60px;
+    gap: 10px;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f2027;
+    background: linear-gradient(135deg, #00eaff, #00ffb3);
+    border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 0 25px rgba(250, 204, 21, 0.6);
-    transition: all 0.35s ease;
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 234, 255, 0.4);
 }
 
-/* Button Glow Effect */
-.mentor-btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
-    transform: translateX(-100%);
-    transition: 0.6s;
-}
-
-.mentor-btn:hover::before {
-    transform: translateX(100%);
-}
-
-.mentor-btn:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 0 45px rgba(250, 204, 21, 0.9);
-}
-
-/* Icon */
+/* Icon inside button */
 .mentor-btn i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-/* Animation */
-@keyframes eliteFade {
-    from {
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+/* Hover Effect */
+.mentor-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 234, 255, 0.6);
+    background: linear-gradient(135deg, #00ffb3, #00eaff);
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .mentorship-section h2 {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .mentorship-section p {
@@ -1467,7 +1411,19 @@ body {
     }
 
     .mentor-btn {
-        padding: 14px 30px;
+        padding: 14px 28px;
         font-size: 0.95rem;
+    }
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
